@@ -1,4 +1,4 @@
-# Frontend Mentor - Interactive rating component solution
+# Frontend Mentor - Card Interativo de Avaliação
 
 ## Índice
 
