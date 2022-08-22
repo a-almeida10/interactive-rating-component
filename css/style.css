@@ -51,10 +51,11 @@ body {
   color: white;
   transition-duration: 0.3s;
 }
-.rating-card .btn:active {
+.rating-card .btn:focus {
   background-color: hsl(25deg, 97%, 53%);
+  color: white;
 }
-.rating-card #star:active {
+.rating-card #star:focus {
   background-color: white;
 }
 .rating-card .btn-submit {
