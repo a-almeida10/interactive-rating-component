@@ -1,49 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive rating component</title>
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <!-- Rating state start -->
+    <main class="rating-card" id="rating-main">
+      <button class="btn" id="star">
+        <img src="./images/icon-star.svg" alt="Star Icon" />
+      </button>
+      <h1 class="rating-title">How did we do?</h1>
+      <p class="rating-text">
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
+      <div class="rating-btn">
+        <input type ="button" class="btn" value="1" onclick="ratingFunction()"></input>
+        <input type ="button" class="btn" value="2" onclick="ratingFunction()"></input>
+        <input type ="button" class="btn" value="3" onclick="ratingFunction()"></input>
+        <input type ="button" class="btn" value="4" onclick="ratingFunction()"></input>
+        <input type ="button" class="btn" value="5" onclick="ratingFunction()"></input>
+      </div>
+      <input type="submit" class="btn-submit" onclick="displayThanks()"></input>
+    </main>
+    <!-- Rating state end -->
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!-- Thank you state start -->
+    <div class="rating-card hidden" id="thanks-card">
+      <img
+        class="thanks-img"
+        src="./images/illustration-thank-you.svg"
+        alt="Thank you"
+      />
+      <button class="btn-thanks">
+        You selected
+        <span id="rate"></span>
+        out of 5
+      </button>
+      <h2 class="rating-title">Thank you!</h2>
+      <p class="rating-text">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don’t hesitate to get in touch!
+      </p>
+    </div>
+    <!-- Thank you state end -->
 
-  <!-- Rating state start -->
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.linkedin.com/in/aghata-almeida/">Ághata Almeida</a>.
+    </footer>
 
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <script src="./scripts/script.js"></script>
+  </body>
 </html>
