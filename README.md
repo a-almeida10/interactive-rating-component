@@ -37,7 +37,7 @@ Finalmente, criei uma classe com a propriedade 'display: hidden' e usei o métod
 
 ### Links
 
-- Site: [Clique Aqui!](https://interactive-rating-component-i47fabqjx-a-almeida10.vercel.app/)
+- Site: [Clique Aqui!](https://interactive-rating-component-pgn3i0jhk-a-almeida10.vercel.app/)
 
 ### Ferramentas
 
